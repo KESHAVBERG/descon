@@ -4,53 +4,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <title>Descon</title>
-</head>
-<body ontouchstart = "touchStart(event)" ontouchmove = "touchmove(event)" ontouchend = "touchend(event)">
-    <!-- <div class="parallax-container">
-        <div class="parallax">
-            <img src="./images/Frame 2.svg" alt="background-image">
-        </div>
-      </div> -->
-      <!-- <div class="container"> -->
-        <div class="parallax-container">
-            <div class="parallax"><img src="./images/Frame 2.svg"></div>
-          <!-- </div> -->
-          <p id="logo" class="flow-text">DESCON</p>
-        </div>
-        <div class="container">
-            <h3 class="flow-text">About DESCON:</h3>
-            <p class="flow-text">Here you will get to know about descon.</p>
-        </div>
-      
-    
-    <script src="./index.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <style>
+        body{
+            background-image:url('https://media.istockphoto.com/vectors/abstract-blurred-colorful-background-vector-id1248542684?k=20&m=1248542684&s=612x612&w=0&h=1yKiRrtPhiqUJXS_yJDwMGVHVkYRk2pJX4PG3TT4ZYM=');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
 
-    <script defer src="js/sidebar.js"></script>
-    <link rel="stylesheet" href="css/sidebar.css">
-    <title>DESCON</title>
-</head>
+        body::-webkit-scrollbar{
+            display: none;
+        }
+
+        div{
+            height:40vh;
+            width:100%;
+            background-color: rgb(19, 91, 155);
+            margin:0;
+            padding:0;
+            position: relative;
+            z-index: 4;
+        }
+
+
+    h1 span { 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        z-index: 5;
+        }
+
+        .material-icons{
+            font-size: 4rem;
+            margin:2rem;
+            cursor: pointer;
+        }
+
+        .material-icons:hover{
+            color:blue;
+        }
+
+        #nav{
+            background: none;
+            position:fixed !important;
+            left:98.6% !important;
+            top:15rem;
+            z-index: 9999999;
+            color:rgba(40, 43, 40, 0.767);
+            background-color: rgba(255, 255, 255, 0.945);
+            height:fit-content;
+            border-radius: 40px;
+            mix-blend-mode: difference;
+        }
+        #nav:hover{
+            left:93% !important;
+        }
+
+    </style>
+
+</head>  
+    
+
+    
+    
 <body>
-    <img src="imgs/rightarrow.png" alt="arrow icon" onmouseover="openMenu()" class="arrowicon">
-    <div id="sideMenu" class="sidemenu" onmouseleave="closeMenu()">
-        <ul>
-            <li class=""><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Members</a></li>
-            <li><a href="#">Contacts</a></li>
-            <li><a href="#">Forum</a></li>
-        </ul>
+    <div id="nav">
+        <span class="material-icons">
+        home
+        </span><br>
+        <span class="material-icons">
+        search
+        </span>
+        <br>
+        <span class="material-icons">
+        settings
+        </span>
+        <br>
+        <span class="material-icons">
+        forum
+        </span><br>
+        <span class="material-icons">
+        quiz
+        </span>
     </div>
+    <div style="width:100%;background-color: #000000ea;color:white;height: 100vh;margin:0;padding:0;font-weight: 600;font-size: 136px;" class="valign-wrapper">
+        <span style="display: block;margin: 0 auto;mix-blend-mode:hard-light;">Designers Consortium</span>
+    </div>
+    <div></div>
+    <div></div>
+    <div></div>
 
-  <div id="home"></div>
-  <div id="about"></div>
-  <div id="Members"></div>
-  <div id="Contacts"></div>
-
-  <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, eaque dicta nesciunt ullam iure molestias. Reiciendis eaque optio esse ipsa, quaerat maiores quisquam maxime dolor neque veritatis, a quibusdam ullam?</h2>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
 
