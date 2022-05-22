@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Descon</title>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <style>
+        body{
+            background-image:
+            url('https://media.istockphoto.com/photos/aurora-borealis-over-in-the-dark-night-sky-over-the-snowy-mountains-picture-id1277499450?b=1&k=20&m=1277499450&s=170667a&w=0&h=Ok9wxRhuuWiPt5U7eFdBpjQ-kulbHxd__SxgK0N9g5k=');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        body::-webkit-scrollbar{
+            display: none;
+        }
+
+        div{
+            height:40vh;
+            width:100%;
+            background-color: rgb(19, 91, 155);
+            margin:0;
+            padding:0;
+            position: relative;
+            z-index: 4;
+        }
+
+
+    h1 span { 
+        position: relative;
+        z-index: 5;
+        }
+
+        .material-icons{
+            font-size: 4rem;
+            margin:2rem;
+            cursor: pointer;
+        }
+
+        .material-icons:hover{
+            color:blue;
+        }
+
+        #nav{
+            background: none;
+            position:fixed !important;
+            left:98.6% !important;
+            top:15rem;
+            z-index: 9999999;
+            color:rgba(40, 43, 40, 0.767);
+            background-color: rgba(255, 255, 255, 0.945);
+            height:fit-content;
+            border-radius: 40px;
+        }
+        #nav:hover{
+            left:93% !important;
+        }
+
+    </style>
+
+</head>  
+    
+
+    
+    
+<body>
+    <div id="nav">
+        <span class="material-icons">
+        home
+        </span><br>
+        <span class="material-icons">
+        search
+        </span>
+        <br>
+        <span class="material-icons">
+        settings
+        </span>
+        <br>
+        <span class="material-icons">
+        forum
+        </span><br>
+        <span class="material-icons">
+        quiz
+        </span>
+    </div>
+    <div 
+        style="width:100%;
+            background-color: #000000c0;
+            color:rgb(255, 255, 255);
+            height: 100vh;
+            margin:0;
+            padding:0;
+            font-weight: 700;
+            font-size: 136px;
+            mix-blend-mode:multiply;" class="valign-wrapper">
+        <span 
+            style="display:block;
+                margin:0 auto;
+                transform: translateY(-50%);">Designers Consortium</span>
+    </div>
+    <div class="row"><div class="col s4"></div><input id="inp" class="col s4" type="text" style="background-color:antiquewhite;padding:1rem;"/><button style="margin:1rem;" class="btn-large white black-text" onclick="update()">Update</button></div>
+    <div></div>
+    <div></div>
+<script>
+    function update(){
+        (document.getElementsByTagName("body")[0]).style.backgroundImage=`url("${document.getElementById("inp").value}")`
+    }
+</script>
+</body>
+</html>
+
