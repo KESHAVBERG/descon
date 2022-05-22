@@ -1,37 +1,47 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/sidebar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="./index.js"></script>
-
     <script defer src="js/sidebar.js"></script>
     <link rel="stylesheet" href="css/sidebar.css">
+
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
+
     <title>DESCON</title>
 </head>
-<body>
-    <img src="imgs/rightarrow.png" alt="arrow icon" onmouseover="openMenu()" class="arrowicon">
+
+<body ontouchstart="touchStart(event)" ontouchmove="touchmove(event)" ontouchend="touchend(event)">
+    <!-- <img src="imgs/rightarrow.png" alt="arrow icon" onmouseover="openMenu()" class="arrowicon"> -->
+    <a href="#"><span class="material-icons arrowicon" style="" onclick="openMenu()">keyboard_arrow_left</span></a>
     <div id="sideMenu" class="sidemenu" onmouseleave="closeMenu()">
         <ul>
-            <li class=""><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Members</a></li>
-            <li><a href="#">Contacts</a></li>
-            <li><a href="#">Forum</a></li>
+            <li><a href="#"><span class="material-icons">home</span></a></li>
+            <li><a href="#"><span class="material-icons">search</span></a></li>
+            <li><a href="#"><span class="material-icons">settings</span></a></li>
+            <li><a href="#"><span class="material-icons">forum</span></a></li>
+            <li><a href="#"><span class="material-icons">quiz</span></a></li>
         </ul>
     </div>
 
-  <div id="home"></div>
-  <div id="about"></div>
-  <div id="Members"></div>
-  <div id="Contacts"></div>
+    <div id="home"></div>
+    <div id="about"></div>
+    <div id="Members"></div>
+    <div id="Contacts"></div>
 
-  <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, eaque dicta nesciunt ullam iure molestias. Reiciendis eaque optio esse ipsa, quaerat maiores quisquam maxime dolor neque veritatis, a quibusdam ullam?</h2>
-    
-  <div class="div" style="height:100%; background-color: black; "></div>
+    <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, eaque dicta nesciunt ullam iure molestias.
+        Reiciendis eaque optio esse ipsa, quaerat maiores quisquam maxime dolor neque veritatis, a quibusdam ullam?</h2>
+
+    <!-- <div class="div" style="height:100%; background-color: black; "></div> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
-</html>
 
+</html>

@@ -1,11 +1,11 @@
 .sidemenu {
     height: 50%;
-    width: 150px;
+    width: 100px;
     position: fixed;
     top: 0;
     right: 0px;
     background-color: rgb(246, 246, 246);
-    margin-right: -250px;
+    margin-right: -80px;
     margin-top: 100px;
     color: rgba(40, 43, 40, 0.767);
     background-color: rgba(255, 255, 255, 0.945);
@@ -14,13 +14,17 @@
     mix-blend-mode: difference;
     padding-bottom: 40px;
     justify-content: center;
-    /* margin-bottom: 100px; */
+    padding-left: 20px;
+    z-index: 9999999;
+    mix-blend-mode: difference;
+ 
 }
 
 .sidemenu ul {
     padding: 0px;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-left: 10px;
+    list-style-type: none;
 }
 
 .sidemenu ul li {
@@ -37,4 +41,22 @@
     position: fixed;
     bottom: 50%;
     right: 0;
+    color: black;
+    /* font-size:; */
+}
+
+a .arrowicon{
+    font-size: 50px;
+}
+
+
+
+.material-icons{
+    font-size: 5rem;
+    margin-top:10px;
+    cursor: pointer;
+}
+
+.material-icons:hover{
+    color:blue;
 }
