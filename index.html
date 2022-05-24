@@ -10,6 +10,7 @@
     <script src="./index.js"></script>
     <script defer src="js/sidebar.js"></script>
     <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="style.css">
 
 
     <link
@@ -20,9 +21,8 @@
 </head>
 
 <body ontouchstart="touchStart(event)" ontouchmove="touchmove(event)" ontouchend="touchend(event)">
-    <!-- <img src="imgs/rightarrow.png" alt="arrow icon" onmouseover="openMenu()" class="arrowicon"> -->
-    <a href="#"><span class="material-icons arrowicon" style="" onclick="openMenu()">keyboard_arrow_left</span></a>
-    <div id="sideMenu" class="sidemenu" onmouseleave="closeMenu()">
+    <span class="material-icons arrowicon" >keyboard_arrow_left</span>
+    <div id="sideMenu" class="sidemenu z-depth-5" onclick="openMenu()" onmouseleave="closeMenu()">
         <ul>
             <li><a href="#"><span class="material-icons">home</span></a></li>
             <li><a href="#"><span class="material-icons">search</span></a></li>
@@ -40,6 +40,10 @@
     <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, eaque dicta nesciunt ullam iure molestias.
         Reiciendis eaque optio esse ipsa, quaerat maiores quisquam maxime dolor neque veritatis, a quibusdam ullam?</h2>
 
+
+        <div style="width:100%;background-color: #000000ea;color:white;height: 100vh;margin:0;padding:0;font-weight: 600;font-size: 136px;" class="valign-wrapper">
+            <span style="display: block;margin: 0 auto;mix-blend-mode:hard-light;">Designers Consortium</span>
+        </div>
     <!-- <div class="div" style="height:100%; background-color: black; "></div> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>

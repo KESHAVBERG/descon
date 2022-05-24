@@ -5,7 +5,7 @@ function openMenu(){
 }
 
 function closeMenu(){
-    document.getElementById(`sideMenu`).style.marginRight = -250;
+    document.getElementById(`sideMenu`).style.marginRight = -80;
     document.body.style.backgroundColor = `transparent`;
 }
 var startingX, startingY, movingX , movingY ;

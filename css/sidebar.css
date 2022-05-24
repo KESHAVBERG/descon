@@ -1,22 +1,19 @@
 .sidemenu {
-    height: 50%;
     width: 100px;
     position: fixed;
     top: 0;
-    right: 0px;
+    right: 0;
     background-color: rgb(246, 246, 246);
     margin-right: -80px;
     margin-top: 100px;
     color: rgba(40, 43, 40, 0.767);
-    background-color: rgba(255, 255, 255, 0.945);
     height: fit-content;
     border-radius: 40px;
-    mix-blend-mode: difference;
     padding-bottom: 40px;
     justify-content: center;
     padding-left: 20px;
-    z-index: 9999999;
-    mix-blend-mode: difference;
+    z-index: 10;
+    color:rgba(40, 43, 40, 0.767);
  
 }
 
@@ -39,13 +36,13 @@
 
 .arrowicon {
     position: fixed;
-    bottom: 50%;
-    right: 0;
+    bottom: 40%;
+    right: 10px;
     color: black;
-    /* font-size:; */
+    mix-blend-mode: difference;
 }
 
-a .arrowicon{
+ .arrowicon{
     font-size: 50px;
 }
 
