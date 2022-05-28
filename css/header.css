@@ -1,0 +1,46 @@
+header{
+    min-height: 800px;
+    background-color: #ffffff;
+    margin-top: 0px;
+    background-image: url('../imgs/header.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+  }
+
+  header .overlay{
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    align-items: center;
+    justify-content: center;
+  }
+
+header .overlay h1{
+    color: white;
+    text-align: center;
+}
+  
+
+  @media only screen and (max-width : 1004px) {
+    header{min-height: 750px;}
+  }
+
+  @media only screen and (max-width : 704px) {
+    header{min-height: 650px;}
+  }
+
+  
+  @media only screen and (max-width : 326px) {
+      header .overlay h1{
+          font-size: 55px;
+      }
+  }
+  @media only screen and (max-width : 288px) {
+    header .overlay h1{
+        font-size: 40px;
+    }
+}
